@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.4
 __author__ = 'mdc_hk'
 version = '1.0'
 
