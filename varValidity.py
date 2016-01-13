@@ -2,7 +2,6 @@
 __author__ = 'mdc_hk'
 version = '1.0'
 
-### Please remember to import xlwt module for the .to_excel function to work; lxml module is an important parser library too.
 import logging, os, re, sys
 import pandas as pd
 from pandas import Series
