@@ -1,0 +1,9 @@
+@HD	VN:1.5	SO:unsorted
+@SQ	SN:Segment1_C2009.458V_PB2	LN:2341	M5:daefa857f6ac9ed80a745e76fede2abf	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment2_C2009.458V_PB1	LN:2341	M5:2466cd8704466a72c0a16f98ce6ccfb6	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment3_C2009.458V_PA	LN:2233	M5:8a77c098712cb34df21445d847bafd2d	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment4_C2009.458V_HA	LN:1762	M5:9fdf87e54b662b68d62133436d145b58	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment5_C2009.458V_NP	LN:1566	M5:6d3039556ea460b36586434f87496fcd	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment6_C2009.485a_NA	LN:1467	M5:b110e9d3ea47f6d71799beba45f999c7	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment7_C2009.485a_MP	LN:1027	M5:fa8a0f7e1a293e2111e3270c55f58b81	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa
+@SQ	SN:Segment8_C2009.485a_NS	LN:890	M5:fb7a183846395381ba6287d09877f9a4	UR:file:/home/hklee/NGS/H3N2Genome_annotated.fa

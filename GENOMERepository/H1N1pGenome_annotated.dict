@@ -1,0 +1,9 @@
+@HD	VN:1.5	SO:unsorted
+@SQ	SN:Segment1_SingaporeON2135_PB2_CY123764	LN:2341	M5:1d83c8c666e90e5690b32c3c00e5a04e	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment2_SingaporeON2135_PB1_CY123765	LN:2341	M5:4832aa654ec2f3cab75359ae3d7092c4	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment3_SingaporeON2135_PA_CY123766	LN:2233	M5:a3cb6e7a4f8649aaa09aff9da2947197	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment4_SingaporeON2135_HA_CY123767	LN:1777	M5:fa0ff029008eb44f5d8ba711b0c179b0	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment5_UgandaMUWRP_093_NP_KJ690401	LN:1565	M5:62a838cfa06ef34e00f3f1cb410f2edb	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment6_SingaporeON2135_NA_CY123769	LN:1458	M5:8cd651319b09bc53130dc62eb80e953c	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment7_SingaporeON2135_MP_CY123770	LN:1027	M5:734bf1c29ce6b616c6edef13c1f106a0	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
+@SQ	SN:Segment8_SingaporeON2135_NS1_CY123771	LN:890	M5:9baf0092a267cf5ed22b8f804bb1c780	UR:file:/home/hklee/NGS/H1N1pGenome_annotated.fa
