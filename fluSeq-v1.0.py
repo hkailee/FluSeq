@@ -20,7 +20,7 @@ if proceed == True:
     workingFolder_tmp = '~/FluSeq/' + folderIn
     os.chdir(os.path.expanduser(workingFolder_tmp))
     workingFolder = os.getcwd()
-    fluSeqFolder = os.path.expanduser(' ~/FluSeq/')
+    fluSeqFolder = os.path.expanduser('~/FluSeq/')
 
     # Logging events...
     logging.basicConfig(filename= workingFolder + '/Log.txt', level=logging.INFO,
