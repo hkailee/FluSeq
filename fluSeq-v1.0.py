@@ -300,7 +300,7 @@ if proceed == True:
                                    workingFolder + '/' + file[0][1] + '/' + file[0][1]+'_table.txt',
                                    workingFolder + '/' + 'ResequencingRunStatistics.xml',
                                    workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_Reference_annotated.fa',
-                                   str(0.9990)], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+                                   str(0.9999)], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         out, err = proc16.communicate()
         print(out.decode('utf-8'))
         logging.info('python3.4 ' + fluSeqFolder + 'varValidity.py ' +
