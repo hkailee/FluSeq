@@ -36,8 +36,8 @@ if proceed == True:
     logging.info('Detected logical CPUs: ' + str(numberOfProcessors))
 
     # Filing number of unique samples found in the working folder...
-    workingFilesR1 = [f for f in os.listdir(workingFolder) if re.match(r'[\w]+S\d+_L001_R1_001\.fastq\.gz', f)]
-    fastqFileNameR1 = re.compile(r'(([\w]+)_S\d+_L001_R)1_001\.fastq\.gz')
+    workingFilesR1 = [f for f in os.listdir(workingFolder) if re.match(r'[\S]+S\d+_L001_R1_001\.fastq\.gz', f)]
+    fastqFileNameR1 = re.compile(r'(([\S]+)_S\d+_L001_R)1_001\.fastq\.gz')
     fastqFilesR1 = []
     for file in workingFilesR1:
         fastqFilesR1.append(fastqFileNameR1.findall(file))
