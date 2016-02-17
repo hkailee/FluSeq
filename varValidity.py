@@ -176,9 +176,7 @@ if proceed == True:
         GeneData = GeneData.reset_index(drop=True)
         UppPredLimit_ContRead = []
         for i in GeneData.index:
-            if GeneData.ix[i]['POS'] <= 30:
-                UppPredLimit_ContRead.append(expectedConR(GeneData.ix[i]['PFreads_inMillion'], Gene, 1))
-            elif 31 <= GeneData.ix[i]['POS'] <= 225:
+            if GeneData.ix[i]['POS'] <= 225:
                 UppPredLimit_ContRead.append(expectedConR(GeneData.ix[i]['PFreads_inMillion'], Gene, 151))
             elif 226 <= GeneData.ix[i]['POS'] <= 450:
                 UppPredLimit_ContRead.append(expectedConR(GeneData.ix[i]['PFreads_inMillion'], Gene, 301))
