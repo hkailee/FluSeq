@@ -75,7 +75,7 @@ $ cd ~/FluSeq/FASTADatabase
 ```
 3.	Execute DBupdate
 ```
-$ ./ DBupdate.py FASTA.fa
+$ ./DBupdate.py FASTA.fa
 or
 $ python3 DBupdate.py FASTA.fa
 or
