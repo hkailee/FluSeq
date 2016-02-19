@@ -133,6 +133,3 @@ $ python3.4 FluSeq-v1.0.py InputFolder
 ## REFERENCE:
 
 [1] Hong Kai Lee, Chun Kiat Lee, Julian Wei-Tze Tang, Tze Ping Loh, and Evelyn Siew-Chuan Koay. Contamination-controlled high-throughput whole genome sequencing for influenza A viruses using the MiSeq sequencer. [Article in preparation]
-
-## License
-FluSeq is released under the [MIT License](http://www.opensource.org/licenses/MIT).
