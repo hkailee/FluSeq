@@ -44,10 +44,13 @@ except IOError:
 print(">> Converting FASTA file from multiline to single line and writing to file.")
 # Conversts multiline fasta to single line. Writes new fasta to file.
 
-os.unlink('FASTA.dat')
-os.unlink('FASTA.dat.index')
-os.unlink('FASTA.dat.lock')
-os.unlink('FASTA.dat.tmp')
+try:
+	os.unlink('FASTA.dat')
+	os.unlink('FASTA.dat.index')
+	os.unlink('FASTA.dat.lock')
+	os.unlink('FASTA.dat.tmp')
+except FileNotFoundError:
+	None
 
 try:
 	storage = FileStorage.FileStorage('FASTA.dat')
