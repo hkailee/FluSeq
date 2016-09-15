@@ -10,18 +10,18 @@ FluSeq is a bioinformatics program developed and tested for an influenza A genom
 Installation instructions are available for LINUX/UNIX or MacOSX only. The entire analytic workflow was implemented and tested by the author on CentOS-6.6/RedHat Linux and MacOSX, but not on other operating systems. The operating system should contain the latest version of java.
 	
 ### Install Python 3.4.3 
-(https://www.python.org/downloads/)
+(https://www.python.org/downloads/) and pip
 - Upon installation, log in as root from Terminal (Linux and MacOSX): 
 ```
-# pip install pandas
-# pip install numpy
-# pip install ZODB
-# pip install lxml 
-# pip install xlrd
-# pip install xlwt
-# pip install beautifulsoup4
-# pip install scipy
-# pip install transaction
+# pip3.4 install pandas
+# pip3.4 install numpy
+# pip3.4 install ZODB
+# pip3.4 install lxml 
+# pip3.4 install xlrd
+# pip3.4 install xlwt
+# pip3.4 install beautifulsoup4
+# pip3.4 install scipy (# yum install lapack-devel if lapack/blas resources not found in the system)
+# pip3.4 install transaction
 ```
 
 ###	Install VICUNA-v1.3 
