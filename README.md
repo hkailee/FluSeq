@@ -13,7 +13,7 @@ Installation instructions are available for LINUX/UNIX or MacOSX only. The entir
 (https://www.python.org/downloads/) and pip
 - Upon installation, log in as root from Terminal (Linux and MacOSX): 
 ```
-# pip3.4 install pandas
+# pip3. install pandas
 # pip3.4 install numpy
 # pip3.4 install ZODB
 # pip3.4 install lxml 
