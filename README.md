@@ -20,7 +20,7 @@ Installation instructions are available for LINUX/UNIX or MacOSX only. The entir
 # pip3.4 install xlrd
 # pip3.4 install xlwt
 # pip3.4 install beautifulsoup4
-# pip3.4 install scipy
+# pip3.4 install scipy (# yum install lapack-devel if lapack/blas resources not found in the system)
 # pip3.4 install transaction
 ```
 
