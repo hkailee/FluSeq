@@ -290,7 +290,7 @@ if proceed == True:
             try:
                 os.unlink(workingFolder + '/' + file[0][1] + '/' + 'tmp_' + file[0][1] + i)
             except FileNotFoundError:
-                print(workingFolder + '/' + file[0][1] + '/' + 'tmp_' + file[0][1] + i + 'is not found.')
+                print(workingFolder + '/' + file[0][1] + '/' + 'tmp_' + file[0][1] + i + ' is not found.')
 
         # Verifying the validity of variants found via GATK UnifiedGenotyper (i.e. excluding contamination/background
         # noise)...
@@ -306,7 +306,7 @@ if proceed == True:
         logging.info('python3.4 ' + fluSeqFolder + 'varValidity.py ' +
                      workingFolder + '/' + file[0][1] + '/' + file[0][1]+'_table.txt ' +
                      workingFolder + '/' + 'ResequencingRunStatistics.xml ' +
-                     workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_Reference_annotated.fa 0.9900')
+                     workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_Reference_annotated.fa 0.9990')
 
         print('>> '+ datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'), '- Sample:' + file[0][1] + '- Generating '
                 'consensus sequences from verified variants')
@@ -318,6 +318,42 @@ if proceed == True:
         logging.info('python3.4 ' + fluSeqFolder + 'seqGen.py ' +
                      workingFolder + '/' + file[0][1]+'_AllGenes.xls ' +
                      workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_Reference_annotated.fa')
+
+
+        print('>> '+ datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'), '- Sample:' + file[0][1] + '- Generating '
+                'Depth of coverage for whole genome')
+        proc18 = subprocess.Popen(['java', '-jar', '/home/hklee/Software/GenomeAnalysisTK.jar',
+                                   '-T', 'DepthOfCoverage',
+                                   '-R', workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_Reference_annotated.fa',
+                                   '-o', workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_base',
+                                   '-I', workingFolder + '/' + file[0][1] + '/' + file[0][1]+'.bam'],
+                                  stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        out, err = proc18.communicate()
+        logging.info('java -jar /home/hklee/Software/GenomeAnalysisTK.jar' + ' -T DepthOfCoverage -R ' +
+                     workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_Reference_annotated.fa -o ' +
+                     workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_base -I ' + workingFolder + '/' +
+                     file[0][1] + '/' + file[0][1]+'.bam')
+
+
+        proc19 = subprocess.Popen(['python3.4', fluSeqFolder + 'plot.py',
+                                   workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_base',
+                                   workingFolder + '/' + file[0][1] + '/'],
+                                  stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        out, err = proc19.communicate()
+        logging.info('python3.4 ' + fluSeqFolder + 'plot.py '+
+                     workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_base ' +
+                     workingFolder + '/' + file[0][1] + '/')
+
+        # Housekeeping...
+        suffixGeneVcfUnlink = ['.sample_cumulative_coverage_counts', '.sample_cumulative_coverage_proportions',
+                               '.sample_interval_statistics', '.sample_interval_summary', '.sample_statistics',
+                               '.sample_summary']
+
+        for i in suffixGeneVcfUnlink:
+            try:
+                os.unlink(workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_base' + i)
+            except FileNotFoundError:
+                print(workingFolder + '/' + file[0][1] + '/' + file[0][1] + '_base' + i + ' is not found.')
 
     endTime = time.time()
     print('>> '+ datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'), '- Folder run completed: Took {} seconds to '

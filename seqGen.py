@@ -142,7 +142,7 @@ if proceed == True:
                 dfGene = dfGene.drop(dfGene.index[:keyDelFront])
 
 
-            dfGene = dfGene.set_index(['position'])
+            dfGene = dfGene.set_index(['POS'])
             geneSeq = list(dictRefGene[gene])
             takeSequence = True
             indexList = dfGene.index.tolist()
