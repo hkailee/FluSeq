@@ -9,8 +9,13 @@ FluSeq is a bioinformatics program developed and tested for an influenza A genom
 
 Installation instructions are available for LINUX/UNIX or MacOSX only. The entire analytic workflow was implemented and tested by the author on CentOS-6.6/RedHat Linux and MacOSX, but not on other operating systems. The operating system should contain the latest version of java.
 	
+<<<<<<< HEAD
 ### Install Python 3.4.3 
 (https://www.python.org/downloads/) and pip
+=======
+### Install Python 3.4.3 and pip 
+(https://www.python.org/downloads/)
+>>>>>>> eccb4ef33e7a1cb134b5b7546a8301237755906d
 - Upon installation, log in as root from Terminal (Linux and MacOSX): 
 ```
 # pip3.4 install pandas
@@ -132,4 +137,5 @@ $ python3.4 FluSeq-v1.0.py InputFolder
 
 ## REFERENCE:
 
-[1] Hong Kai Lee, Chun Kiat Lee, Julian Wei-Tze Tang, Tze Ping Loh, and Evelyn Siew-Chuan Koay. Contamination-controlled high-throughput whole genome sequencing for influenza A viruses using the MiSeq sequencer. [Article in preparation]
+[1] Hong Kai Lee, Chun Kiat Lee, Julian Wei-Tze Tang, Tze Ping Loh, and Evelyn Siew-Chuan Koay. Contamination-controlled high-throughput whole genome sequencing for influenza A viruses using the MiSeq sequencer. *Sci Rep.* 2016, 6:33318. doi: 10.1038/srep33318.
+
