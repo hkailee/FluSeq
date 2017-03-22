@@ -11,9 +11,6 @@ Installation instructions are available for LINUX/UNIX or MacOSX only. The entir
 	
 ### Install Python 3.4.3 
 (https://www.python.org/downloads/) and pip
-=======
-### Install Python 3.4.3 and pip 
-(https://www.python.org/downloads/)
 
 - Upon installation, log in as root from Terminal (Linux and MacOSX): 
 ```
