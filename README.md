@@ -9,8 +9,8 @@ FluSeq is a bioinformatics program developed and tested for an influenza A genom
 
 Installation instructions are available for LINUX/UNIX or MacOSX only. The entire analytic workflow was implemented and tested by the author on CentOS-6.6/RedHat Linux and MacOSX, but not on other operating systems. The operating system should contain the latest version of java.
 	
-### Install Python 3.4.3 
-(https://www.python.org/downloads/) and pip
+### Install Python 3.4.3 and pip
+(https://www.python.org/downloads/) 
 
 - Upon installation, log in as root from Terminal (Linux and MacOSX): 
 ```
